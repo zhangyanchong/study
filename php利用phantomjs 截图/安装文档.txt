@@ -1,0 +1,19 @@
+1 须服务端和客户端都按照gearman 扩展
+2 服务器 执行 可以执行多个
+  php/bin/php /code/work/screen.php
+3 客户端
+<?php 
+    /*最新**/
+    public static function screenshot($url, $width = 1500)
+    {
+        $client = new \GearmanClient();
+        $client->addServers("10.10.10.90:4370,10.10.10.92:4370"); //连接到Job server上
+        $data['url'] = $url;
+        $data['webWidth'] = $width;
+        $rs = $client->doNormal("screenshot", json_encode($data));
+        return json_decode($rs, true);
+    }
+	
+	$url="http://www.baidu.com";
+	$rs=screenshot($url,1500);
+	echo "<pre>";print_r($rs);
