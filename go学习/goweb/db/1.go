@@ -10,9 +10,9 @@ import (
 )
 
 const (
-	userName = "root"
-	password = "mipig@123"
-	ip       = "39.106.185.206"
+	userName = ""
+	password = ""
+	ip       = ""
 	port     = "3306"
 	dbName   = "tmp"
 )
