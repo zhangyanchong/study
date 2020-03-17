@@ -101,3 +101,16 @@ class Excel {
     } 
 }
 
+
+
+
+具体使用个下面
+
+$xin=[];
+//echo "<pre>";print_r($realArray);exit;
+foreach ($realArray as $k=>$v){
+    $xin[]=array_values($v);
+}
+
+$header=array('号店id','号店名称','微信同步状态','公众号','公众号id','关注状态');
+\Excel::export_excel($xin, $header, 'daochu' . time());
