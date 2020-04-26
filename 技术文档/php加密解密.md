@@ -20,5 +20,31 @@ function jiemi($val,$str){
     var_dump($result);
     return $result;
 }
+
+
+
+
+class Encrypt {
+    protect  $pass= md5(base64_encode("123abc456"));
+	public static function encryptAes($data = '') {
+	    
+
+		if(function_exists('openssl_encrypt')) {
+			return openssl_encrypt($data, "aes128", $this->pass);
+		} else {
+			//TODO
+		}
+		
+	}
+
+	public static function decryptAes($data = '') {
+	
+		if(function_exists('openssl_decrypt')) {
+			return openssl_decrypt($data, "aes128", $this->pass);
+		}
+		
+	}
+}
+
 ?>
 ```
