@@ -94,7 +94,8 @@
 		logappend=true
 		port=27000
 		fork=true
-		dbpath=/zyc/mongo_share/data/mongos/
+		configdb=config_set/127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003
+
 
 7.分片副本集配置   2个副本集
 
