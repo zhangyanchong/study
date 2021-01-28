@@ -26,6 +26,5 @@
 		
 		导入集合   mongoimport -d mydb -c testc --file /tmp/testc.json  
 
-
-                恢复带密码的指定库 
-               /mnt/mongo_share/mongodb42/bin/mongorestore   -h 127.0.0.1:27017  -d calorie_log /mnt/bak_mongo_data/20210127/calorie_log   -u 用户名 -p 密码  --authenticationDatabase admin
+      恢复带密码的指定库 
+      /mnt/mongo_share/mongodb42/bin/mongorestore   -h 127.0.0.1:27017  -d calorie_log /mnt/bak_mongo_data/20210127/calorie_log   -u 用户名 -p 密码  --authenticationDatabase admin
