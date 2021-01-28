@@ -22,15 +22,10 @@
 		
 		恢复指定库   mongorestore -d zyc /zyc/mongo_share/tmp/zyc  //-d跟要恢复的库名字，dir就是该库备份时所在的目录  
 		
-	       恢复带密码的指定库
-/mnt/mongo_share/mongodb42/bin/mongorestore   -h 127.0.0.1:27017  -d calorie_log /mnt/bak_mongo_data/20210127/calorie_log   -u 用户名 -p 密码  --authenticationDatabase admin
-
-		
 		恢复集合  mongorestore -d mydb -c testc dir/mydb/testc.bson // -c后面跟要恢复的集合名字，dir是备份mydb库时生成文件所在路径，这里是一个bson文件的路径   
 		
 		导入集合   mongoimport -d mydb -c testc --file /tmp/testc.json  
 
 
-
-     /mnt/mongo_share/mongodb42/bin/mongorestore   -h 127.0.0.1:27017  -d calorie_log /mnt/bak_mongo_data/20210127/calorie_log   -u 用户名 -p 密码  --authenticationDatabase admin
-
+              恢复带密码的指定库 
+              /mnt/mongo_share/mongodb42/bin/mongorestore   -h 127.0.0.1:27017  -d calorie_log /mnt/bak_mongo_data/20210127/calorie_log   -u 用户名 -p 密码  --authenticationDatabase admin
