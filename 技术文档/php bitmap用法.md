@@ -36,6 +36,21 @@
 	        self::$data[$row] |= 1 << $index;
 	    }
 	
+
+               /*
+           * bit map 删除值
+           * **/
+            public  static  function delValue($n){
+                $row = $n >> 6;
+                //余数
+                $index = $n % self::$max;
+                //  echo (1 << $index); exit;
+                //或运算保证占位不被覆盖   $a << $b	Shift left（左移）	将 $a 中的位向左移动 $b 次（每一次移动都表示“乘以 2”）。
+                if(self::exits($n)){
+                    @self::$data[$row]^= 1 << $index;
+                }
+            }
+        
 	    // 判断所在的bit为是否为1
 	    public static function exits($n) {
 	        $row = $n >> 6;
