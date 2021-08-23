@@ -1,0 +1,101 @@
+多重继承
+
+1.
+type per1 struct{
+	  id    int
+	  addr  string
+}
+
+type per2 struct{
+	 name string
+}
+
+type Stu struct {
+    //结构体成员多个匿名字段
+	 per1   //匿名字段
+	 per2   //匿名字段
+	 score  int
+}
+
+var   aa  Stu
+     aa.id=100
+     aa.addr="住址"
+     aa.name="张三"
+
+
+2.
+//爷 
+type human struct{
+	id  int
+	age int
+}
+//父
+type per struct{
+	human
+	name string
+}
+//子
+type stu struct{
+	 per
+	 score int
+}
+
+var  aa stu    //类似于创建对象
+ aa.name="亚瑟"
+ aa.age=12
+ aa.score=90
+
+ fmt.Println(aa)
+
+//自动推导
+ bb:=stu{per{human{12,45},"张三"},30}
+ fmt.Println(bb)
+
+
+
+2 类中的方法
+函数  
+
+func 函数名（参数列表） 返回值列表{
+	代码体
+}
+
+
+//方法   跟函数的区别是必须传对象类型
+func (对象) 方法名（参数列表）返回值列表{
+	代码体
+}
+
+对象的方法名和函数名 重复是没有影响的 但是相同的对象方法 不能重名
+
+type cat struct{
+	 id int
+	 name string
+}
+
+func (c cat)show(){
+	 fmt.Println("喵喵")
+}
+
+func (c dog)show(){
+	fmt.Println("旺旺")
+}
+
+func show(){
+	fmt.Println("毛")
+}
+
+var  c  cat
+     c.id=1
+     c.name="猫"
+      fmt.Println(c)
+      c.show();
+
+var d dog
+	d.id=1
+	d.name="狗"
+	fmt.Println(c)
+	d.show();
+
+
+show();

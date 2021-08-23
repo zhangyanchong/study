@@ -1,0 +1,32 @@
+
+子类赋值
+//子类和父类结构体有相同的成员们 默认赋值给了子类 才用就近原则
+
+type Person struct{
+	 id int
+	 name string
+	 age  int
+}
+
+type Stu struct{
+	*Person   //指针类型的 匿名字段
+	score int
+}
+1.1
+var s Stu
+s.score=90
+s.id=101  // 会报错
+fmt.Println(s)
+
+
+1.2
+var s Stu
+s.score=90
+s.Person=new (Person)  //创建一个内存空间
+s.id=101
+fmt.Println(s)
+
+1.3
+s.Pseron4=&Pserson(110,"niao",s.ge)
+
+

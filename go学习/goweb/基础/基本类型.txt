@@ -1,0 +1,88 @@
+1 字符串  一个汉字占3个字符
+ str:="adsf"   //4
+ str1:="年后"  //6
+ fmt.Println(len(str))
+ fmt.Println(len(str1))
+ 1.1 字符串拼接
+ str3:=str+str1
+ fmt.Println(len(str2))
+
+ 2. 字符和字符串的区别
+
+  var  ch byte
+  var str string
+
+  //字节 
+  //1 单引号
+  //2 字符 往往都是一个字符  除了\n \t 转义字符
+   ch='a'
+   fmt.Println(ch)
+
+  //字符串
+  //1双引号
+  //2字符串可以有一个或者多个字符组成
+  //3.字符串都是隐藏了一个结束符 '\0'
+   str:="abc"
+   fmt.Println(str)
+   fmt.Println(str[0],str[1])   //数字
+   fmt.Printf("%c,%c",str[0],str[1])  //字符
+
+ 3. 格式化输出
+   fmt的 格式化输出
+   %T  类型
+   %d  10进制输出
+   %s  字符串输出
+   %c  字符输出
+   %f  浮点型输出
+  %p  内存地址
+
+ 4.输入
+  var  a int
+  //阻塞我们的进程，等待用户的输入  格式化输入
+  fmt.Printf("请用户输入数据：")
+  fmt.Scanf("%d",&a)
+
+  fmt.Println(a)
+
+//可以简单点
+  var  b int
+  fmt.Scan(&b)
+
+ 5.类型转换  (用来在不同但相互兼容的类型之间相互转换)
+  5.1 数据类型（变量） int（a）
+  5.2 数据类型（表达式）
+
+  a,b,c:=54,30,20
+  sum:=a+b+c
+  fmt.Println(sum) //104
+  fmt.Println(sum/3) //34 自动推导的整数
+  fmt.Println(float(sum)/3)) //34.6666...
+
+  5.3 bool 类型无法转换
+  
+  5.4 在类型转换时，建议低类型转换成高类型，保证数据的精度
+   //int8--int16--int32
+   //float32---float64
+   //int64---float64
+   如果高类型转出低类型 会丢失精度  数据溢出 符号发生改变
+
+  var d float32=3.1
+  var f float64=3.5
+  num:=d+f  //报错不同类型 无法操作
+  num:=float64(d)+f
+  fmt.Println(num)  //5.59999
+
+6 运算符
+  &a  取地址运算符   变量a的地址
+  *a  取值运算符     指针变量a所指向的内存的值
+
+  var  a:int=12
+   fmt.Printf("%p\n",&a)   //a变量的地址
+   fmtp.Println(a)
+   fmt.Printf("%d",*&a)   //&a 内存地址 的值
+
+
+
+
+
+  

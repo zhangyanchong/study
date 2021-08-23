@@ -1,0 +1,113 @@
+1.多重赋值
+ a,b,c:=10,20,30
+ fmt.Println(a,b)
+2. 数据交换
+  var a,b int=10,20
+  var c int
+  c=a
+  a=b
+  b=c
+  fmt.Println(a,b)
+
+  i,j:=10,20
+  i,j=j,i    //数据就交换了 
+  fmt.Println(i,j)
+ 
+ 3.匿名变量  丢弃数据不处理 （就是下划线）
+ tmp,_:=7,8
+ fmt.Println(tmp)
+
+ 4. 多个变量和常量的定义
+   变量 程序可运行期间 可以改变的量 声明关键字var
+
+   不同类型变量的定义
+ 4.1 正常
+   var a int=1
+   var b float64=2.0
+   fmt.Println(a,b)
+4.2 简写
+  var (
+      a int=1
+      b float64=2.0
+  )
+
+  fmt.Println(a,b)
+4.3   自动推导
+  var (
+      a =1
+      b =2.0
+  )
+
+  fmt.Println(a,b)
+ 4.4 简单自动推导
+    a,b:=1,2.0
+  fmt.Println(a,b)
+
+5 常量   程序运行期间不可以更改的量  关键字为const
+  5.1 正常
+    const  i int =10
+    fmt.Println(i)
+   5.2 简写
+    const (
+          i int=10
+          j float64=3.14
+      )
+    fmt.Println(i,j)  
+   5.3 自动推导
+    const(
+      i=10
+      j=3.13
+     ) 
+    fmt.Println(i,j)  
+
+6.枚举   iota  
+  6.1 iota 常量自动生成器，每个一行，自动加一
+      iota 是给常量赋值使用的
+      iota  遇到const 会重置变为0
+  const （
+     a=iota   //0
+     b=iota   //1
+     c=iota   //2
+   ）
+
+   fmt.Println(a,b,c)
+
+   const d=iota  遇到const 会重置变为0
+   fmt.Pintln(d)  //0
+
+//写一个iota 也可以 必须同一个括号（）里面
+  const(
+      a1=iota
+      b1
+      c1
+   )
+
+     fmt.Pintln(a1,b1,c1)  
+  6.2  如果在同一行 值是一样的
+    const(
+          i=iota
+          j1,j2,j3=iota,iota,iota   //1,1,1
+          c=iota  //2
+    )   
+   fmt.Println(i)
+   fmt.Println(j1,j2,j3)
+   fmt.Println(c)
+
+7 数值类型
+  7.1 字符类型  单引号表示字符  双引号才表示字符串
+   字节类型
+  var  a byte='a'
+
+  fmt.Println(a)   //97
+
+//%c是个占位符，表示打印一个字符
+  fmt.Printf("%c",a)  //a   2个是一样的
+  fmt.Printf("%c",97)  //a
+  fmt.Printf("%T",a)   //uint8     byte字节类型同事也是unit8的别名
+
+  7.2 \n \t
+
+  fmt.Println("\n")
+
+
+ 

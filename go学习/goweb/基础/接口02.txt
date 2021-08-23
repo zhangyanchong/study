@@ -1,0 +1,41 @@
+1.空接口
+ var  i interface{}
+
+//接口类型可以接收任意类型的数据
+
+	fmt.Printf("%T\n",i)
+	i=10
+	fmt.Println(i)
+	fmt.Printf("%T\n",i)
+
+
+	i=3.14
+	fmt.Println(i)
+	fmt.Printf("%T\n",i)
+	//
+	i="nihao"
+	fmt.Println(i)
+	fmt.Printf("%T\n",i)
+
+
+		var  b[] interface{}
+	fmt.Printf("%T\n",b)
+	b=append(b,10,3.14,"aaa")
+	fmt.Println(b)
+
+2. 类型断言
+
+   var  i interface{}
+
+   i:=100
+
+  // 值  值的判断 接口变量.(数据类型)
+   value,ok:=element.(T)	
+
+   value,ok=i.(int)
+
+  if ok {
+   fmt.Println("整形数据",value)
+  }else{
+  fmt.Println("不是整形数据")
+  }

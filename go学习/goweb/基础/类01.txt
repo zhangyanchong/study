@@ -1,0 +1,49 @@
+go的类
+
+1.结构体嵌套  继承
+type Person struct {   //父类
+	  id int
+	  name string
+	  age int
+}
+
+type Student Struct{  //子类
+	 Person    //像继承    匿名字段 只要类型 没有名字
+	 score int
+}
+
+
+func main(){
+	//初始化
+	var s1 Student =Student{Person{101,"小名",18},12}
+  
+
+    //自动推导
+    s2:= Student{Person{102,"张三",20},12}
+
+    //指定初始化成员  没有初始化的部分 整形为0 字符串为空字符串
+     s3:=Student{score:100}
+
+     //
+     s4:=Student{Person{name:"make"},80}
+
+
+   //成員操作  .操作符
+     s1.score=18
+     s1.Person.id=110  //一样
+     s1.id=112    //一样 因为继承
+
+
+    fmt.Println(s1)
+    fmt.Println(s2)
+    fmt.Println(s3)
+     fmt.Println(s4)
+}
+
+
+
+go的类
+
+我们可以把结构体当做类
+
+

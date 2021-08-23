@@ -1,0 +1,99 @@
+1
+func (c cat)show(){
+	fmt.Println("猫")
+} 
+
+func (d dog)show(){
+	fmt.Println("狗")
+}
+
+只要传的结构体不一样 方法名可以一样的
+
+2  方法继承
+
+//父类
+type per struct{
+	 id int
+	 name string
+}
+//子类
+type stu struct{
+     per    //匿名字段
+	score int
+}
+
+func (p *per) printInfo(){
+	fmt.Printf("id%d",p.id)
+	fmt.Printf("名字%d",p.name)
+}
+
+//子类可以继承父类 可以继承属性和方法
+   xin:=per{1,"张三"}
+
+   s:=stu{per{2,"里斯"},5}
+   s.printInfo()
+
+
+ 3. 方法重写
+ 
+//父类
+type per struct{
+	 id int
+	 name string
+}
+
+//父类的方法
+func (p *per) printInfo(){
+	fmt.Printf("id%d\n",p.id)
+	fmt.Printf("名字%d\n",p.name)
+}
+
+
+//子类
+type stu struct{
+     per    //匿名字段
+	score int
+}
+
+func (s * stu)printInfo(){
+		fmt.Printf("分数%d\n",s.name)
+}
+
+
+//子类可以继承父类 可以继承属性和方法
+   xin:=per{1,"张三"}
+
+   s:=stu{per{2,"里斯"},5}
+   s.printInfo()
+
+
+
+4. 方法值和方法表达式
+ 
+ type per struct{
+   id int
+   name string
+ }
+
+func (p per)PrintInfo1(){
+	fmt.Println(p.id)
+}
+
+func (p *per)PrintInfo2(){
+	fmt.Println(*p.name)
+}
+
+ p:=per{1,"张三"}
+ p.PrintInfo1()
+ p.PrintInfo2()
+
+//方法值  隐式传递  隐藏的是接受者  绑定实例（对象）
+ f1:=p.PrintInfo1    //方法值
+ f2:=p.PrintInfo2
+
+ f1()
+
+
+ //方法表达式   显示传参
+pfunc1:=per.PrintInfo1;
+pfunc1(p)

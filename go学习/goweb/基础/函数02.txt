@@ -1,0 +1,173 @@
+1.函数内存相关
+ 函数名在整个项目中唯一
+ 内存相对于一个可执行的程序来说，可以分为四个区
+
+ 代码区
+ 数据区
+ 椎区
+ 栈区  用了存贮程序执行过程中函数内部定义的信息和局部变量
+  
+2.函数类型
+
+//函数名表示一个地址 ，函数在代码区的地址
+func demo(a,b int){
+	fmt.Println(a+b)
+}
+ fmt.Println(demo)  //打印的是个地址 
+
+f:=demo    //demo 地址给了 f
+fmt.Println(f)  //跟demo 地址的一样的
+f(10,20)   //通过f调用了函数
+
+fmt.Printf("%T\n",f)
+
+//声明了b 是一个函数类型的变量
+var  b func(int,int) 
+
+ b=demo
+
+ 3.函数的作用域
+   局部变量
+   1.定义在函数内部的变量为 局部变量
+     局部变量的作用域 函数内部有效
+   2.不通的函数 可以定义相同的局部变量 互不影响
+   3.变量 先声明 在使用 在函数内部 变量名是唯一的
+
+   var i int =10
+    for i:=0;i<5;i++{    //for 比较特殊 它可以理解为他是一个函数
+       fmt.Println(i)
+    } 
+
+   全局变量
+   1.定义在函数外部的变量 成为全局变量
+   2. 全局变量作用域是在整个文件
+   3.全局变量名不能和我们的其他文件中的全局变量重名
+   4. 全局变量名和局部变量名可以重名
+   5.如果全局变量名和局部变量名相同，那么我们会使用局部变量
+   6.就近原则 
+
+   var a int=6;  // 全局变量
+   var b int =6  //全局变量
+  
+    func test(){
+         a=5
+    }
+
+   func main(){
+      b:=10  //全局变量可以再次初始化
+      a=9
+      test()
+      fmt.Println(a)
+      fmt.Println(&a)
+
+      a:=20
+      fmt.Println(&a)
+   }
+
+
+4 匿名函数讲解
+  匿名函数  没有名字的函数
+  func main(){
+     var num int
+     num=9
+     //第一种方式
+     f=func(){
+        num++
+        fmt.Println(num)
+     }
+     f()
+
+    //第二种方式
+     func(){
+        num++
+        fmt.Println(num)
+     }()
+
+     //第三种方式
+
+     fmt.Println(num)
+  }
+
+
+  参数传递
+  func(a,b int){
+     var sum int
+     sum=a+b
+     fmt.Println(sum)
+  }(3,6)
+
+   f:= func(a,b int){
+     var sum int
+     sum=a+b
+     fmt.Println(sum)
+  }
+  f(3,6)
+
+
+  有返回值的
+  x,y:=func(m,n int)(max,min int){
+    max=m
+    min=n
+    return
+  }(10,20)
+  fmt.Println(x,y)
+
+  	f:=func(m,n int)(max,min int){
+		max=m
+		min=n
+		return
+	}
+   x,y:=f(20,10)
+   fmt.Println(x,y)
+
+  5 闭包  
+  匿名函数最重要的功能就是实现了闭包
+  闭包 不关心你的变量超出了你的作用域 只要有闭包还在使用他
+  那么这个变量还会存在
+
+   func test() int{
+      var x  int
+       x++
+       return x
+   }
+
+
+   func test（） func() int{
+     var x int
+      return func() int{
+         x++
+         return x
+      }
+   }
+
+  
+-----------------
+  func test() func() int{
+	var x int
+	return func() int{
+		x++
+		return x
+	}
+}
+    func main(){
+
+	f:=test()
+   fmt.Println(f())
+	fmt.Println(f())
+	fmt.Println(f())
+}
+
+
+
+6递归函数
+func  test(a int){
+     if(a==1){
+     fmt.Println(a)
+      return
+     }
+	 test(a-1)
+	 fmt.Println(a)
+}
+
+递归函数调用自己本身 
+递归函数有相同的结构 必须有跳出条件

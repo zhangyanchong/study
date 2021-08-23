@@ -1,0 +1,77 @@
+接口
+1.接口定义和使用
+type stu  struct{
+	 id    int
+	 name  string
+	 score int
+}
+
+func (s  *stu)sayhi(){
+	fmt.Printf("大家好,我是%s,我的分数%d",s.name,s.score)
+}
+
+type teacher struct{
+	id int
+	name string
+	jiao string
+}
+
+func (s  *teacher)sayhi(){
+	fmt.Printf("大家好,我是%s,我的教学%s",s.name,s.jiao)
+}
+
+
+//先定义接口  默认都是一er 结尾 根据接口实现功能
+type Humaner interface{
+	 //方法   方法声明
+	 sayhi()
+}
+
+
+
+func main(){
+
+  xue:=stu{1,"小名",12}
+//	xue.sayhi()
+
+	tea:=teacher{1,"老师","教数学"}
+  //  tea.sayhi();
+
+
+ //接口是一种数据类型，可以接收满足对象的信息
+ //接口是虚的 方法是实在的
+ //接口定义规则 方法实现规则
+ //接口定义的规则 ，你在方法当中必须实现
+   var  h   Humaner
+   //将对象信息赋值给接口列席变量
+    h=&stu	
+    h.sayhi();
+
+}
+
+
+
+
+2. 多态的实现
+
+//先定义接口  默认都是一er 结尾 根据接口实现功能
+type Humaner interface{
+	 //方法   方法声明
+	 sayhi()
+}
+
+
+//定义一个普通的函数
+ //将接口作为函数参数 实现多态
+ func sayHello(h Humaner){
+      h.sayhi()
+ }
+
+func main(){
+   xue:=stu{1,"小名",12}
+   sayHello(&xue)
+
+
+	tea:=teacher{1,"老师","教数学"}
+	 sayHello(&tea)
+}
