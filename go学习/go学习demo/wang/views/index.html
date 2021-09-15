@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<link type="text/css" rel="styleSheet"  href="static/css/index.css" />
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+首页
+<a href="page/login.html" class="login">登录</a>
+
+<hr>
+名称：{{.Name}} ,类别{{.Add}}
+<hr>
+<span style="color:red" onclick="tijiao()">ajax</span>
+</body>
+
+<script>
+
+    function tijiao(){
+        var data={};
+            data.id="";
+        $.ajax({
+            type: "POST",
+            url: "/jsonlist",
+            dataType:'json',
+            data: data,
+            success: function(info){
+                if(info.Num==5){
+                    alert(111);
+                }
+                console.log(info)
+            }
+        });
+    }
+
+</script>
+</html>
