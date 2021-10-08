@@ -1,0 +1,642 @@
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |       ROUTE        |              HANDLER               | MIDDLEWARE  
+----------|---------|---------|--------|--------------------|------------------------------------|-------------
+  default | default | :8100   | ALL    | /api/account/login | xin/app/api.(*AccountApi).Login-fm |             
+----------|---------|---------|--------|--------------------|------------------------------------|-------------
+  default | default | :8100   | GET    | /api/index/index   | xin/app/api.(*IndexApi).Index-fm   |             
+----------|---------|---------|--------|--------------------|------------------------------------|-------------
+ 
+2021-10-08 10:25:06.256 3860: http server started listening on [:8100] 
+2021-10-08 10:25:28.200 [ERRO] [2029 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:30.245 [ERRO] [2038 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:32.290 [ERRO] [2038 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:32.290 [ERRO] [2038 ms] [default] SELECT `Id`,`Username`,`Password` FROM `user` WHERE `username`='admin' AND `password`='111' LIMIT 1
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:34.331 [ERRO] [2034 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:36.367 [ERRO] [2027 ms] [default] SELECT `Id`,`Username`,`Password` FROM `user` WHERE `username`='admin' AND `password`='111' LIMIT 1
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:42.264 [ERRO] [2045 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:44.317 [ERRO] [2044 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:46.362 [ERRO] [2036 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:46.362 [ERRO] [2037 ms] [default] SELECT `Id`,`Username`,`Password` FROM `user` WHERE `username`='admin' AND `password`='111' LIMIT 1
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:48.412 [ERRO] [2042 ms] [default] SHOW FULL COLUMNS FROM `user`
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:25:50.468 [ERRO] [2045 ms] [default] SELECT `Id`,`Username`,`Password` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1
+Error: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  xin/app/service.(*accountService).UserQuery
+    D:/goweb/src/xin/app/service/account.go:16
+2.  xin/app/api.(*AccountApi).Login
+    D:/goweb/src/xin/app/api/account.go:21
+ 
+2021-10-08 10:26:41.176 [DEBU] [  2 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 10:26:41.180 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 10:26:44.388 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password` FROM `user` WHERE `username`='admin' AND `password`='111' LIMIT 1 
+2021-10-08 10:33:02.285 [DEBU] [  4 ms] [default] SELECT `id`,`username`,`password` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 10:57:31.559 [DEBU] SetServerRoot path: D:\goweb\src\xin\public 
+2021-10-08 10:57:31.563 8232: http server started listening on [:8100] 
+2021-10-08 10:58:14.078 [DEBU] SetServerRoot path: D:\goweb\src\xin\public 
+2021-10-08 10:58:14.083 9388: http server started listening on [:8100] 
+2021-10-08 11:03:18.712 [DEBU] SetServerRoot path: D:\goweb\src\xin 
+2021-10-08 11:03:18.718 6012: http server started listening on [:8100] 
+2021-10-08 11:04:11.231 [DEBU] SetServerRoot path: D:\goweb\src\xin 
+2021-10-08 11:04:11.235 8500: http server started listening on [:8100] 
+2021-10-08 11:04:34.244 [DEBU] SetServerRoot path: D:\goweb\src\xin\public 
+2021-10-08 11:04:34.248 5088: http server started listening on [:8100] 
+2021-10-08 11:06:11.022 [DEBU] SetServerRoot path: D:\goweb\src\xin\public 
+2021-10-08 11:06:11.027 13040: http server started listening on [:8100] 
+2021-10-08 11:08:46.343 13376: http server started listening on [:8100] 
+2021-10-08 11:09:29.646 9996: http server started listening on [:8100] 
+2021-10-08 11:09:45.685 13344: http server started listening on [:8100] 
+2021-10-08 11:10:27.991 1052: http server started listening on [:8100] 
+2021-10-08 11:11:14.413 13512: http server started listening on [:8100] 
+2021-10-08 11:12:17.688 [FATA] there's no route set or static feature enabled, did you forget import the router? 
+Stack:
+1.  main.main
+    D:/goweb/src/xin/xin.go:9
+ 
+2021-10-08 11:13:09.610 7620: http server started listening on [:8100] 
+2021-10-08 11:14:58.608 10004: http server started listening on [:8100] 
+2021-10-08 11:15:13.699 13728: http server started listening on [:8100] 
+2021-10-08 11:15:50.504 13288: http server started listening on [:8100] 
+2021-10-08 11:16:15.024 2812: http server started listening on [:8100] 
+2021-10-08 11:17:22.254 10440: http server started listening on [:8100] 
+2021-10-08 11:18:01.622 8336: http server started listening on [:8100] 
+2021-10-08 11:18:32.379 13956: http server started listening on [:8100] 
+2021-10-08 11:19:27.931 [FATA] there's no route set or static feature enabled, did you forget import the router? 
+Stack:
+1.  main.main
+    D:/goweb/src/xin/xin.go:9
+ 
+2021-10-08 11:19:48.733 12028: http server started listening on [:8100] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |       ROUTE        |              HANDLER               | MIDDLEWARE  
+----------|---------|---------|--------|--------------------|------------------------------------|-------------
+  default | default | :8100   | ALL    | /api/account/login | xin/app/api.(*AccountApi).Login-fm |             
+----------|---------|---------|--------|--------------------|------------------------------------|-------------
+  default | default | :8100   | GET    | /api/index/index   | xin/app/api.(*IndexApi).Index-fm   |             
+----------|---------|---------|--------|--------------------|------------------------------------|-------------
+ 
+2021-10-08 11:20:31.089 13172: http server started listening on [:8100] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                | MIDDLEWARE  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |             
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm |             
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+  default | default | :8100   | GET    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      |             
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+ 
+2021-10-08 11:21:29.069 8152: http server started listening on [:8100] 
+2021-10-08 11:21:37.300 [DEBU] [  3 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 11:21:37.303 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 11:21:38.893 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 11:32:11.228 [DEBU] [  4 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 11:32:34.173 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=0 LIMIT 1 
+2021-10-08 11:32:49.054 [DEBU] [  4 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 11:32:54.158 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 11:42:42.563 [DEBU] [  3 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=0 LIMIT 1 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                | MIDDLEWARE  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |             
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm |             
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+  default | default | :8100   | GET    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      |             
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------
+ 
+2021-10-08 11:42:55.642 12568: http server started listening on [:8100] 
+2021-10-08 11:43:03.533 [DEBU] [  7 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 11:43:03.536 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=0 LIMIT 1 
+2021-10-08 11:43:08.155 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=0 LIMIT 1 
+2021-10-08 11:45:37.110 [DEBU] [  3 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=0 LIMIT 1 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 11:45:45.867 12204: http server started listening on [:8100] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 11:46:51.834 15888: http server started listening on [:8100] 
+2021-10-08 11:47:08.437 [DEBU] [  3 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 11:47:08.440 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='12' LIMIT 1 
+2021-10-08 11:47:15.083 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='1111111' LIMIT 1 
+2021-10-08 11:47:20.114 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 11:47:32.339 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 11:48:13.945 16104: http server started listening on [:8100] 
+2021-10-08 11:48:17.986 [DEBU] [  3 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 11:48:17.989 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 11:48:20.042 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 11:48:24.109 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 11:48:28.979 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='1111' LIMIT 1 
+2021-10-08 11:48:35.198 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 11:48:36.884 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:32.428 [DEBU] [ 68 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 14:08:32.652 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `password`='111111' AND `username`='admin' LIMIT 1 
+2021-10-08 14:08:32.858 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 14:08:33.026 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `password`='111111' AND `username`='admin' LIMIT 1 
+2021-10-08 14:08:33.735 [DEBU] [  2 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:33.916 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:34.124 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:34.331 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:34.523 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:34.748 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:34.955 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:35.171 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:08:35.355 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut | xin/app/api.(*AccountApi).LoginOut-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 14:11:00.344 10544: http server started listening on [:8100] 
+2021-10-08 14:11:21.796 [DEBU] [ 48 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:11:21.799 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `password`='111111' AND `username`='admin' LIMIT 1 
+2021-10-08 14:11:23.084 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+2021-10-08 14:11:33.009 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 14:11:34.918 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut | xin/app/api.(*AccountApi).LoginOut-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 14:12:42.551 13300: http server started listening on [:8100] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | POST   | /api/account/addUser  | xin/app/api.(*AccountApi).AddUser-fm  | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut | xin/app/api.(*AccountApi).LoginOut-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 14:35:30.775 15304: http server started listening on [:8100] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser  | xin/app/api.(*AccountApi).AddUser-fm  | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut | xin/app/api.(*AccountApi).LoginOut-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 14:36:05.296 12708: http server started listening on [:8100] 
+2021-10-08 14:36:48.065 [DEBU] [  5 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:36:48.069 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='admin' AND `password`='111111' LIMIT 1 
+2021-10-08 14:36:50.460 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=1 LIMIT 1 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |         ROUTE         |                HANDLER                |             MIDDLEWARE              
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser  | xin/app/api.(*AccountApi).AddUser-fm  | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login    | xin/app/api.(*AccountApi).Login-fm    |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut | xin/app/api.(*AccountApi).LoginOut-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo | xin/app/api.(*AccountApi).UserInfo-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index      | xin/app/api.(*IndexApi).Index-fm      |                                     
+----------|---------|---------|--------|-----------------------|---------------------------------------|-------------------------------------
+ 
+2021-10-08 14:40:49.073 8332: http server started listening on [:8100] 
+2021-10-08 14:41:03.140 [DEBU] [  7 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:41:03.160 [DEBU] [ 17 ms] [default] INSERT INTO `user`(`update_time`,`username`,`password`,`create_time`) VALUES(1633675263,'zhangsan','123',1633675263)  
+2021-10-08 14:42:12.346 [ERRO] [  7 ms] [default] INSERT INTO `user`(`username`,`password`,`create_time`,`update_time`) VALUES('zhangsan','123',1633675332,1633675332) 
+Error: Error 1062: Duplicate entry 'zhangsan' for key 'username' 
+Stack:
+1.  xin/app/service.(*accountService).AddUser
+    D:/goweb/src/xin/app/service/account.go:30
+2.  xin/app/api.(*AccountApi).AddUser
+    D:/goweb/src/xin/app/api/account.go:46
+3.  xin/app/api/middleware.LoginMidServer.Login
+    D:/goweb/src/xin/app/api/middleware/login.go:18
+ 
+2021-10-08 14:52:10.751 [DEBU] [  4 ms] [default] INSERT INTO `user`(`update_time`,`username`,`password`,`create_time`) VALUES(1633675930,'zhangsan1','123',1633675930)  
+2021-10-08 14:52:23.460 [DEBU] [  2 ms] [default] INSERT INTO `user`(`create_time`,`update_time`,`username`,`password`) VALUES(1633675943,1633675943,'zhangsan2','123')  
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 14:52:41.477 1932: http server started listening on [:8100] 
+2021-10-08 14:53:22.340 [DEBU] [  7 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:53:22.344 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=-3 LIMIT 1 
+2021-10-08 14:53:34.146 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=4 LIMIT 1 
+2021-10-08 14:53:34.155 [ERRO] [  4 ms] [default] UPDATE `user` SET `username`='zhangsan2' WHERE `id`=4
+Error: Error 1062: Duplicate entry 'zhangsan2' for key 'username' 
+Stack:
+1.  xin/app/service.(*accountService).UpdateUser
+    D:/goweb/src/xin/app/service/account.go:36
+2.  xin/app/api.(*AccountApi).UpdateUser
+    D:/goweb/src/xin/app/api/account.go:66
+3.  xin/app/api/middleware.LoginMidServer.Login
+    D:/goweb/src/xin/app/api/middleware/login.go:18
+ 
+2021-10-08 14:54:04.323 [DEBU] [  3 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=4 LIMIT 1 
+2021-10-08 14:54:04.328 [ERRO] [  2 ms] [default] UPDATE `user` SET `username`='zhangsan2' WHERE `id`=4
+Error: Error 1062: Duplicate entry 'zhangsan2' for key 'username' 
+Stack:
+1.  xin/app/service.(*accountService).UpdateUser
+    D:/goweb/src/xin/app/service/account.go:36
+2.  xin/app/api.(*AccountApi).UpdateUser
+    D:/goweb/src/xin/app/api/account.go:66
+3.  xin/app/api/middleware.LoginMidServer.Login
+    D:/goweb/src/xin/app/api/middleware/login.go:18
+ 
+2021-10-08 14:54:37.286 [DEBU] [  3 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=4 LIMIT 1 
+2021-10-08 14:54:37.291 [ERRO] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2' WHERE `id`=4
+Error: Error 1062: Duplicate entry 'zhangsan2' for key 'username' 
+Stack:
+1.  xin/app/service.(*accountService).UpdateUser
+    D:/goweb/src/xin/app/service/account.go:36
+2.  xin/app/api.(*AccountApi).UpdateUser
+    D:/goweb/src/xin/app/api/account.go:66
+3.  xin/app/api/middleware.LoginMidServer.Login
+    D:/goweb/src/xin/app/api/middleware/login.go:18
+ 
+2021-10-08 14:54:50.379 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=8 LIMIT 1 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 14:55:35.710 11152: http server started listening on [:8100] 
+2021-10-08 14:55:43.037 [DEBU] [  3 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:55:43.040 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=8 LIMIT 1 
+2021-10-08 14:56:01.968 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=8 LIMIT 1 
+2021-10-08 14:56:14.412 [DEBU] [  3 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=2 LIMIT 1 
+2021-10-08 14:56:14.418 [ERRO] [  2 ms] [default] UPDATE `user` SET `username`='zhangsan2' WHERE `id`=2
+Error: Error 1062: Duplicate entry 'zhangsan2' for key 'username' 
+Stack:
+1.  xin/app/service.(*accountService).UpdateUser
+    D:/goweb/src/xin/app/service/account.go:36
+2.  xin/app/api.(*AccountApi).UpdateUser
+    D:/goweb/src/xin/app/api/account.go:68
+3.  xin/app/api/middleware.LoginMidServer.Login
+    D:/goweb/src/xin/app/api/middleware/login.go:18
+ 
+2021-10-08 14:56:40.497 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=2 LIMIT 1 
+2021-10-08 14:56:40.504 [DEBU] [  3 ms] [default] UPDATE `user` SET `username`='zhangsan2aa' WHERE `id`=2 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 14:57:20.523 13940: http server started listening on [:8100] 
+2021-10-08 14:57:28.777 [DEBU] [  5 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:57:28.780 [DEBU] [  0 ms] [default] UPDATE `user` SET `username`='zhangsan2aa' WHERE `id`=10 
+2021-10-08 14:57:31.311 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2aa' WHERE `id`=10 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 14:58:09.220 13712: http server started listening on [:8100] 
+2021-10-08 14:58:15.534 [DEBU] [  5 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:58:15.538 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2aa' WHERE `id`=10 
+2021-10-08 14:58:47.097 [DEBU] [  7 ms] [default] UPDATE `user` SET `username`='zhangsan2bb' WHERE `id`=2 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 14:59:22.232 15624: http server started listening on [:8100] 
+2021-10-08 14:59:27.863 [DEBU] [  4 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 14:59:27.867 [DEBU] [  2 ms] [default] UPDATE `user` SET `username`='zhangsan2bb' WHERE `id`=2 
+2021-10-08 14:59:38.193 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2bb' WHERE `id`=10 
+2021-10-08 14:59:40.496 [DEBU] [  0 ms] [default] UPDATE `user` SET `username`='zhangsan2bb' WHERE `id`=10 
+2021-10-08 14:59:42.279 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2bb' WHERE `id`=10 
+2021-10-08 14:59:46.624 [DEBU] [  0 ms] [default] UPDATE `user` SET `username`='zhangsan2cc' WHERE `id`=10 
+2021-10-08 15:00:02.376 [DEBU] [  5 ms] [default] UPDATE `user` SET `username`='zhangsan2cc' WHERE `id`=2 
+2021-10-08 15:00:04.339 [DEBU] [  2 ms] [default] UPDATE `user` SET `username`='zhangsan2cc' WHERE `id`=2 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 15:01:17.585 14204: http server started listening on [:8100] 
+2021-10-08 15:01:23.844 [DEBU] [  2 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 15:01:23.848 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2cc' WHERE `id`=2 
+2021-10-08 15:01:35.389 [DEBU] [  3 ms] [default] UPDATE `user` SET `username`='zhangsan2cc11' WHERE `id`=2 
+2021-10-08 15:01:42.896 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2cc11' WHERE `id`=2 
+2021-10-08 15:01:49.859 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2cc11' WHERE `id`=20 
+2021-10-08 15:01:56.315 [DEBU] [  2 ms] [default] UPDATE `user` SET `username`='zhangsan2cc11' WHERE `id`=20 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 15:03:39.970 11136: http server started listening on [:8100] 
+2021-10-08 15:04:02.802 [DEBU] [  2 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 15:04:02.807 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=20 LIMIT 1 
+2021-10-08 15:04:02.812 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2cc11' WHERE `id`=20 
+2021-10-08 15:04:05.479 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=20 LIMIT 1 
+2021-10-08 15:04:05.484 [DEBU] [  0 ms] [default] UPDATE `user` SET `username`='zhangsan2cc11' WHERE `id`=20 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 15:04:41.883 16132: http server started listening on [:8100] 
+2021-10-08 15:04:49.771 [DEBU] [  3 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 15:04:49.775 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=20 LIMIT 1 
+2021-10-08 15:04:54.076 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=2 LIMIT 1 
+2021-10-08 15:04:54.083 [DEBU] [  3 ms] [default] UPDATE `user` SET `username`='zhangsan2cc11' WHERE `id`=2 
+2021-10-08 15:04:59.025 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `id`=2 LIMIT 1 
+2021-10-08 15:04:59.030 [DEBU] [  1 ms] [default] UPDATE `user` SET `username`='zhangsan2cc345' WHERE `id`=2 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 15:36:14.132 5364: http server started listening on [:8100] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/userlist   | xin/app/api.(*AccountApi).UserList-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 15:36:47.064 3816: http server started listening on [:8100] 
+2021-10-08 15:37:03.652 [DEBU] [  5 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 15:37:03.655 [DEBU] [  0 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` 
+2021-10-08 15:37:31.511 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='username' 
+2021-10-08 15:37:35.384 [DEBU] [  2 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `username`='zhangsan1' 
+2021-10-08 15:38:13.721 [DEBU] [  2 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE `nickname`='111' 
+2021-10-08 15:38:28.303 [DEBU] [  1 ms] [default] SELECT `id`,`username`,`password`,`nickname` FROM `user` WHERE (`username`='zhangsan1') AND (`nickname`='111') 
+2021-10-08 15:47:47.290 [ERRO] [ 19 ms] [default] INSERT INTO `user`(`username`,`password`,`create_time`,`update_time`) VALUES('zhangsan1','',1633679267,1633679267) 
+Error: Error 1062: Duplicate entry 'zhangsan1' for key 'username' 
+Stack:
+1.  xin/app/service.(*accountService).AddUser
+    D:/goweb/src/xin/app/service/account.go:30
+2.  xin/app/api.(*AccountApi).AddUser
+    D:/goweb/src/xin/app/api/account.go:46
+3.  xin/app/api/middleware.LoginMidServer.Login
+    D:/goweb/src/xin/app/api/middleware/login.go:18
+ 
+2021-10-08 15:47:51.230 [DEBU] [  2 ms] [default] INSERT INTO `user`(`username`,`password`,`create_time`,`update_time`) VALUES('zhangsan34','',1633679271,1633679271)  
+2021-10-08 15:47:54.127 [DEBU] [  2 ms] [default] INSERT INTO `user`(`create_time`,`update_time`,`username`,`password`) VALUES(1633679274,1633679274,'zhangsan789','')  
+2021-10-08 15:47:56.640 [DEBU] [  2 ms] [default] INSERT INTO `user`(`username`,`password`,`create_time`,`update_time`) VALUES('1345','',1633679276,1633679276)  
+2021-10-08 15:48:19.528 [ERRO] [  4 ms] [default] INSERT INTO `user`(`username`,`password`,`create_time`,`update_time`) VALUES('1345','111',1633679299,1633679299) 
+Error: Error 1062: Duplicate entry '1345' for key 'username' 
+Stack:
+1.  xin/app/service.(*accountService).AddUser
+    D:/goweb/src/xin/app/service/account.go:30
+2.  xin/app/api.(*AccountApi).AddUser
+    D:/goweb/src/xin/app/api/account.go:46
+3.  xin/app/api/middleware.LoginMidServer.Login
+    D:/goweb/src/xin/app/api/middleware/login.go:18
+ 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE          |                 HANDLER                 |             MIDDLEWARE              
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/addUser    | xin/app/api.(*AccountApi).AddUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/delUser    | xin/app/api.(*AccountApi).DelUser-fm    | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/login      | xin/app/api.(*AccountApi).Login-fm      |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/loginOut   | xin/app/api.(*AccountApi).LoginOut-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/updateUser | xin/app/api.(*AccountApi).UpdateUser-fm | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | GET    | /api/account/userInfo   | xin/app/api.(*AccountApi).UserInfo-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/account/userlist   | xin/app/api.(*AccountApi).UserList-fm   | middleware.LoginMidServer.Login-fm  
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+  default | default | :8100   | ALL    | /api/index/index        | xin/app/api.(*IndexApi).Index-fm        |                                     
+----------|---------|---------|--------|-------------------------|-----------------------------------------|-------------------------------------
+ 
+2021-10-08 15:48:41.512 13448: http server started listening on [:8100] 
+2021-10-08 15:49:17.215 [DEBU] [  2 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-10-08 15:49:17.225 [DEBU] [  5 ms] [default] DELETE FROM `user` WHERE `id`=9 

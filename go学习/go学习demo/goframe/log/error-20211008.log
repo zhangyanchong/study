@@ -1,0 +1,36 @@
+2021-10-08 14:53:22.346 500 "GET http 127.0.0.1:8100 /api/account/updateUser?username=zhangsan2&id=-3 HTTP/1.1" 0.015, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/api.(*AccountApi).UpdateUser
+    	D:/goweb/src/xin/app/api/account.go:63
+   2).  xin/app/api/middleware.LoginMidServer.Login
+    	D:/goweb/src/xin/app/api/middleware/login.go:18
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-10-08 14:54:50.383 500 "GET http 127.0.0.1:8100 /api/account/updateUser?username=zhangsan2&id=8 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/api.(*AccountApi).UpdateUser
+    	D:/goweb/src/xin/app/api/account.go:63
+   2).  xin/app/api/middleware.LoginMidServer.Login
+    	D:/goweb/src/xin/app/api/middleware/login.go:18
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-10-08 14:55:43.044 500 "GET http 127.0.0.1:8100 /api/account/updateUser?username=zhangsan2&id=8 HTTP/1.1" 0.013, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/api.(*AccountApi).UpdateUser
+    	D:/goweb/src/xin/app/api/account.go:65
+   2).  xin/app/api/middleware.LoginMidServer.Login
+    	D:/goweb/src/xin/app/api/middleware/login.go:18
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-10-08 14:56:01.973 500 "GET http 127.0.0.1:8100 /api/account/updateUser?username=zhangsan2&id=8 HTTP/1.1" 0.006, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/api.(*AccountApi).UpdateUser
+    	D:/goweb/src/xin/app/api/account.go:65
+   2).  xin/app/api/middleware.LoginMidServer.Login
+    	D:/goweb/src/xin/app/api/middleware/login.go:18
+2. runtime error: invalid memory address or nil pointer dereference
+ 

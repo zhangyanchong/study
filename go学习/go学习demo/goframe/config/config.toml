@@ -1,0 +1,43 @@
+# HTTP Server.
+[server]
+	address        = ":8100"
+	serverRoot     = "public"
+	serverAgent    = "xin"
+	logPath        = "log"
+	nameToUriType  = 2
+	routeOverWrite = true
+
+    sessionIdName    = "MySessionId"
+    sessionPath      = "/tmp/MySessionStoragePath"
+    sessionMaxAge    = "24h"
+
+
+
+# Logger configurations.
+[logger]
+    path   = "log"
+    level  = "all"
+    stdout = true
+
+# Template view configurations.
+[viewer]
+    path        = "template"
+    defaultFile = "index.html"
+
+# Database configurations.
+[database]
+    link  = "mysql:root:root@tcp(127.0.0.1:3306)/xin"
+    debug = true
+    # 数据库日志对象配置
+    [database.logger]
+        Path   = "log"
+        Level  = "all"
+        Stdout = true
+
+# GF-CLI工具配置
+[gfcli]
+    # 自定义DAO生成配置(默认是读取database配置)
+    [[gfcli.gen.dao]]
+        link   = "mysql:root:root@tcp(127.0.0.1:3306)/test"
+        tables = "user"
+

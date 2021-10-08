@@ -1,0 +1,288 @@
+2021-09-30 16:14:19.688 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.020, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:19.539 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.016, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:20.316 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:20.556 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:21.646 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:21.876 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:22.070 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:22.252 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:15:22.444 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:17
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:17:24.676 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.019, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:16
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:17:25.701 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:16
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:17:25.916 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:16
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:17:26.108 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:16
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:17:26.276 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:16
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:17:26.428 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:16
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:26
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:17:31.109 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:16
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:28
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:19:05.752 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.015, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:28
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:20:17.772 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.019, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:28
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:20:18.509 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:28
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:20:20.034 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.008, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:28
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:03.976 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.012, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:04.863 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.007, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:05.078 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.006, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:05.260 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:05.419 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:05.571 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:05.732 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.005, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:05.899 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:06.051 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.003, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:22:06.236 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111 HTTP/1.1" 0.004, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/common.ReturnJson
+    	D:/goweb/src/xin/app/utils/common/common.go:20
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:25
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 16:36:59.402 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.006, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/helper.(*helpHelper).ReturnJson
+    	D:/goweb/src/xin/app/utils/helper/help.go:15
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:27
+2. runtime error: invalid memory address or nil pointer dereference
+ 
+2021-09-30 18:26:24.737 500 "GET http 127.0.0.1:8100 /api/account/login?username=admin&password=111111 HTTP/1.1" 0.187, 127.0.0.1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+Stack:
+1. Internal Error: runtime error: invalid memory address or nil pointer dereference
+   1).  xin/app/utils/helper.helpHelper.ReturnJson
+    	D:/goweb/src/xin/app/utils/helper/help.go:15
+   2).  xin/app/api.(*AccountApi).Login
+    	D:/goweb/src/xin/app/api/account.go:27
+2. runtime error: invalid memory address or nil pointer dereference
+ 
