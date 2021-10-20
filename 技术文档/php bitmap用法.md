@@ -22,7 +22,7 @@
 	    private static $phpIntMax = PHP_INT_MAX;
 	    //最大位数64位 1 << 6 32位 1 << 5
 	   // private static $max = (1 << 6 ) - 1;
-	    private static $max =63;
+	    private static $max =64;
 	    //储存数据的变量
 	    private static $data = [];
 	
