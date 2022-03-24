@@ -8,19 +8,30 @@ import (
 	"wang/dao"
 )
 
-func BookList(w http.ResponseWriter, r *http.Request)  {
-    type dataS	struct {
-	   Num  int
-	   Data  interface{}
+//列表真复杂 实在没办法
+func BookList(w http.ResponseWriter, r *http.Request) {
+	type dataS struct {
+		Num  int
+		Data interface{}
 	}
+	type RealbookModel struct {
+		IsFile int
+		*model.Book
+	}
+	var realbookOne RealbookModel
+	var Realbook []RealbookModel
 
-	booklist,_:= dao.GetBook()
-	//for k,v:=range booklist{
-    //   fmt.Println("值是：",k,v)
-	//}
-	 realdata:= dataS{Num:5,Data:booklist}
-	t:=template.Must((template.ParseFiles("views/page/list.html")))
-	t.Execute(w,realdata)
+	booklist, _ := dao.GetBook()
+	for _, v := range booklist {
+		realbookOne.Book = v
+		realbookOne.IsFile = 1
+		Realbook = append(Realbook, realbookOne)
+		fmt.Println("值是：", v)
+	}
+	fmt.Print(Realbook)
+	realdata := dataS{Num: 10, Data: Realbook}
+	t := template.Must((template.ParseFiles("views/page/list.html")))
+	t.Execute(w, realdata)
 }
 
 func Rjson(w http.ResponseWriter, r *http.Request)  {
