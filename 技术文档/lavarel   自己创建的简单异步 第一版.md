@@ -33,10 +33,10 @@
 6.相关代码介绍 
   1.入口文件  swoole_server.php
  ```
-       <?php
+    <?php
     
     /*
-     * 需要安装一下swoole
+     * 需要安装一下swoole  php 建议7.4 或者更高  7.3 sleep 有问题
      * 需要在程序执行 php swoole_server.php   守护
      * php swoole_server.php >> swoole_server.log 2>&1 &   错误输出到文件用于查看
      * 使用： 在App\Task  建立自己的类  一个类相当于一种类型
@@ -78,10 +78,11 @@
     
     //不加这个会一直报错
     Swoole\Event::wait();
+
  ```  
  核心文件TaskBase.php
  ```
-      <?php
+     <?php
     
     namespace App\Task\Core;
     
@@ -90,7 +91,7 @@
     use Swoole\Coroutine;
     use Swoole\Process;
     use Illuminate\Support\Facades\DB;
-    
+    use PDO;
     class  TaskBase
     {
         /*
@@ -139,10 +140,10 @@
                             $this->errorInfoToDb($taskId,$queueFile,$error['message']);
                         }
                     });
-    
+                    set_time_limit(0);
                     // 在每个子进程中创建新的数据库连接 (否则会报错)
                     DB::reconnect();
-    
+                    DB::connection()->getPdo()->setAttribute(PDO::ATTR_TIMEOUT,7200); // 设置数据库连接的超时时间
                     $parameters = json_decode($v['param_json'], true);
                     //方法和类
                     $methodName = "handle";
@@ -178,6 +179,7 @@
                             // call_user_func_array([$handler, $methodName], $parameters);
                             // 将参数作为一个数组传递
                             $handler->$methodName($parameters);
+    
                             // 更新任务状态为已完成
                             $this->taskStatusChange($taskId, 3);
                         } catch (\Exception $e) {
@@ -240,7 +242,10 @@
                     if($tmpCount>=$taskTypeLimit){
                         continue;
                     }
-                    $data[] = QueueJob::whereIn("status", [1])->where("queue_file", $queueFile)->where('try_num',"<=",$tryNum)->orderBy("created_at", "desc")->first()->toArray();
+                    $queueJobData = QueueJob::whereIn("status", [1])->where("queue_file", $queueFile)->where('try_num',"<=",$tryNum)->orderBy("created_at", "desc")->first();
+                    if (!empty($queueJobData)){
+                        $data[] = $queueJobData;
+                    }
                 }
             }
             return $data;
