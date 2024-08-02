@@ -33,7 +33,8 @@
 6.相关代码介绍 
   1.入口文件  swoole_server.php
  ```
-    <?php
+       <?php
+    
     /*
      * 需要安装一下swoole
      * 需要在程序执行 php swoole_server.php   守护
@@ -64,15 +65,23 @@
     });
     
     // 等待所有子进程结束
-    while (($status = Process::wait()) !== false) {
-        // 处理子进程状态
-    }
+    //while (($status = Process::wait()) !== false) {
+    //    // 处理子进程状态
+    //}
+    
+    // 添加信号处理以回收子进程
+    Process::signal(SIGCHLD, function () {
+        while ($ret = Process::wait(false)) {
+            echo "Process with PID {$ret['pid']} exited with code {$ret['code']}\n";
+        }
+    });
+    
     //不加这个会一直报错
     Swoole\Event::wait();
  ```  
  核心文件TaskBase.php
  ```
-     <?php
+      <?php
     
     namespace App\Task\Core;
     
@@ -120,6 +129,17 @@
     //        $taskData=[];  //进程
             foreach ($taskList as $k => $v) {
                 $process = new Process(function (Process $process) use ($v) {
+                    // 注册一个关闭函数来处理致命错误  必须写在最前面
+                    register_shutdown_function(function () use ($v) {
+                        $error = error_get_last();
+                        if ($error) {
+                            $taskId = $v['id'];
+                            $queueFile = $v['queue_file'];
+                            //错误信息
+                            $this->errorInfoToDb($taskId,$queueFile,$error['message']);
+                        }
+                    });
+    
                     // 在每个子进程中创建新的数据库连接 (否则会报错)
                     DB::reconnect();
     
@@ -129,20 +149,15 @@
                     $namespace = "App\Task\\";
                     $queueFile = $v['queue_file'];
                     $tmpObj = $namespace . $queueFile;
-                    $handler = new  $tmpObj;
+                    $taskId = $v['id'];
     
-                    // 注册一个关闭函数来处理致命错误
-                    register_shutdown_function(function () use ($v) {
-                        $error = error_get_last();
-                        if ($error) {
-                            $taskId = $v['id'];
-                            $queueFile = $v['queue_file'];
-                            // 更新任务状态为失败
-                            $this->taskStatusChange($taskId, 4);
-                            //错误信息
-                            $this->errorInfoToDb($taskId,$queueFile,$error['message']);
-                        }
-                    });
+                    //文件不存在或者 类不对
+                    if (class_exists($tmpObj)==false){
+                        $this->errorInfoToDb($taskId,$queueFile,"类文件不正确,请看一下队列是否和文件名字一样");
+                        return;
+                    }
+    
+                    $handler = new  $tmpObj;
     
                     //设置超时时间 默认就是无限期执行
     //                $timeout = 3600*2; // 设定超时时间为10秒
@@ -157,7 +172,6 @@
     
     
                     if (method_exists($handler, $methodName)) {
-                        $taskId = $v['id'];
                         // 更新任务状态为正在处理
                         $this->taskStatusChange($taskId, 2);
                         try {
@@ -168,8 +182,6 @@
                             $this->taskStatusChange($taskId, 3);
                         } catch (\Exception $e) {
                             echo "Caught exception in task for task ID $taskId: " . $e->getMessage() . "\n";
-                            // 更新任务状态为失败
-                            $this->taskStatusChange($taskId, 4);
                             //错误信息
                             $this->errorInfoToDb($taskId,$queueFile,$e->getMessage());
                         }
@@ -184,6 +196,8 @@
         }
     
         function  errorInfoToDb($taskId,$queueFile,$content){
+            // 更新任务状态为失败
+            $this->taskStatusChange($taskId, 4);
             $insert = [];
             $insert['queue_file'] = $queueFile;
             $insert['job_id'] = $taskId;
